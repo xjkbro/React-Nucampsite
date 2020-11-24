@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Card, CardImg, CardText, CardBody, CardTitle } from "reactstrap";
 
 function RenderCampsite({ campsite }) {
@@ -42,8 +42,8 @@ function CampsiteInfo(props) {
         return (
             <div className="container">
                 <div className="row">
-                    {renderCampsite(props.campsite)}
-                    {renderComments(props.campsite.comments)}
+                    <RenderCampsite campsite={props.campsite} />
+                    <RenderComments comments={props.campsite.comments} />
                 </div>
             </div>
         );
