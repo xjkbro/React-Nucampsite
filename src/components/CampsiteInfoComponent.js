@@ -62,6 +62,7 @@ class CommentForm extends Component {
                                     id="rating"
                                     name="rating"
                                     className="form-control"
+                                    defaultValue="1"
                                 >
                                     <option value="1">1</option>
                                     <option value="2">2</option>
