@@ -9,6 +9,7 @@ import {
 } from "reactstrap";
 import { Link } from "react-router-dom";
 import { Loading } from "./LoadingComponent";
+import { baseUrl } from "../shared/baseUrl";
 
 // Renders a Single Item for the Directory
 function RenderDirectoryItem({ campsite }) {
@@ -17,7 +18,7 @@ function RenderDirectoryItem({ campsite }) {
             <Link to={`/directory/${campsite.id}`}>
                 <CardImg
                     width="100%"
-                    src={campsite.image}
+                    src={baseUrl + campsite.image}
                     alt={campsite.name}
                 />
                 <CardImgOverlay>
